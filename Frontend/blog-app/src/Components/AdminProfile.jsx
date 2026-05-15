@@ -20,7 +20,7 @@ function AdminProfile() {
 
   const fetchUsers = async () => {
     try {
-      let res = await axios.get("https://atp-vj9u.onrender.com/admin-api/emails", {
+      let res = await axios.get("https://week-7-assignments-mvfg.onrender.com/admin-api/emails", {
         withCredentials: true,
       });
 
@@ -40,7 +40,7 @@ function AdminProfile() {
   const toggleStatus = async (user) => {
     try {
       await axios.put(
-        "https://atp-1.onrender.com/admin-api/userStatus",
+        "https://week-7-assignments-mvfg.onrender.com/admin-api/userStatus",
         {
           email: user.email, //FIXED (was userId before)
           isUserActive: !user.isUserActive,

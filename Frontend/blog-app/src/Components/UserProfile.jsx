@@ -29,7 +29,7 @@ function UserProfile() {
       try {
         //read articles of all authors
         let res = await axios.get(
-          "https://atp-vj9u.onrender.com/user-api/articles",
+          "https://week-7-assignments-mvfg.onrender.com/user-api/articles",
           { withCredentials: true },
         );
         //update articles state

@@ -34,7 +34,7 @@ function AuthorArticles() {
         setLoading(true);
         //read articles of current author
         let res = await axios.get(
-          "https://atp-vj9u.onrender.com/author-api/article",
+          "https://week-7-assignments-mvfg.onrender.com/author-api/article",
           { withCredentials: true },
         );
         if (res.status === 200) {

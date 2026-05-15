@@ -51,7 +51,7 @@ function ArticleByID() {
 
       try {
         const res = await axios.get(
-          `https://atp-vj9u.onrender.com/user-api/article/${id}`,
+          `https://week-7-assignments-mvfg.onrender.com/user-api/article/${id}`,
           { withCredentials: true },
         );
 
@@ -85,7 +85,7 @@ function ArticleByID() {
 
     try {
       const res = await axios.patch(
-        "https://atp-vj9u.onrender.com/author-api/articles",
+        "https://week-7-assignments-mvfg.onrender.com/author-api/articles",
         { articleId: article._id, isArticleActive: newStatus },
         { withCredentials: true },
       );
@@ -120,7 +120,7 @@ function ArticleByID() {
     commentObj.articleId = article._id;
     console.log(commentObj);
     let res = await axios.put(
-      "https://atp-vj9u.onrender.com/user-api/articles",
+      "https://week-7-assignments-mvfg.onrender.com/user-api/articles",
       commentObj,
       { withCredentials: true },
     );

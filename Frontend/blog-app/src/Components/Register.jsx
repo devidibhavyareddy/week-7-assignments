@@ -34,7 +34,7 @@ function Register() {
       console.log(userObj)
       //make http request to create user
       let res = await axios.post(
-        "https://atp-vj9u.onrender.com/common-api/users",
+        "https://week-7-assignments-mvfg.onrender.com/common-api/users",
         userObj
       );
       

@@ -39,7 +39,7 @@ function WriteArticles() {
       setLoading(true);
       //make POST req to save new article
       let res = await axios.post(
-        "https://atp-vj9u.onrender.com/author-api/article",
+        "https://week-7-assignments-mvfg.onrender.com/author-api/article",
         articleObj,
         { withCredentials: true },
       );
